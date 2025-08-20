@@ -382,21 +382,22 @@
           <p class="mini">Prefer email? <a href="mailto:hello@claimwellpartners.com">hello@claimwellpartners.com</a></p>
         </div>
         <div class="glass panel">
-         <form
-  action="https://formspree.io/f/myzpqpja"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+          <form aria-label="Contact form" onsubmit="submitContact(event)">
+            <label>Full name
+              <input required type="text" name="name" placeholder="Jane Doe" style="width:100%; margin-top:6px; padding:10px; border-radius:10px; border:1px solid var(--line); background:#0c162a; color:var(--ink)">
+            </label><br><br>
+            <label>Work email
+              <input required type="email" name="email" placeholder="jane@clinic.com" style="width:100%; margin-top:6px; padding:10px; border-radius:10px; border:1px solid var(--line); background:#0c162a; color:var(--ink)">
+            </label><br><br>
+            <label>Practice name
+              <input type="text" name="practice" placeholder="Healthy Hearts Clinic" style="width:100%; margin-top:6px; padding:10px; border-radius:10px; border:1px solid var(--line); background:#0c162a; color:var(--ink)">
+            </label><br><br>
+            <label>Message
+              <textarea required name="message" rows="4" placeholder="We need help reducing denials and speeding up payments." style="width:100%; margin-top:6px; padding:10px; border-radius:10px; border:1px solid var(--line); background:#0c162a; color:var(--ink)"></textarea>
+            </label><br><br>
+            <button class="btn primary" type="submit">Send message</button>
+            <p class="mini" style="margin-top:8px">By submitting, you agree to limited use of your contact details for responding to this inquiry. No patient data, please.</p>
+          </form>
         </div>
       </div>
     </section>
