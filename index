@@ -450,7 +450,7 @@
     // Contact (no backend yet)
     function submitContact(e){
       e.preventDefault();
-      alert('Thanks! We will reach out shortly.\n(Connect this form to Formspree, EmailJS, or your backend to go live.)');
+      alert('Thanks! We will reach out shortly)');
       e.target.reset();
     }
   </script>
